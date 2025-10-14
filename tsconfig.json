@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "ES2024",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "lib": ["ES2024"],
+    "types": ["miniprogram-api-typings"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./**/*.ts",
+    "src/utils/OSSLicensesDistText.js",
+    "src/utils/OSSLicensesDist.js",
+    "src/agreement-docs/AgreementDocsDist.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

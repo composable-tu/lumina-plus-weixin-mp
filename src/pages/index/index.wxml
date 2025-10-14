@@ -1,0 +1,73 @@
+<!--
+Copyright (c) 2025 LuminaPJ
+SM2 Key Generator is licensed under Mulan PSL v2.
+You can use this software according to the terms and conditions of the Mulan PSL v2.
+You may obtain a copy of Mulan PSL v2 at:
+         http://license.coscl.org.cn/MulanPSL2
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v2 for more details.
+-->
+<error-popup bind:visible-change="errorVisibleChange" message="{{errorMessage}}" visible="{{errorVisible}}"/>
+
+<t-navbar t-class-content="t-navbar-content" t-class-placeholder="t-navbar-placeholder">
+    <view class="title" slot="left">首页</view>
+</t-navbar>
+
+<view>
+    <t-swiper autoplay="{{true}}" class="mx-32rpx py-16rpx" current="{{1}}" duration="{{500}}" height="{{150}}"
+              interval="{{5000}}" list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}"/>
+
+    <t-tabs class="mx-16rpx" theme="tag">
+        <t-tab-panel label="报名中" value="报名中"/>
+        <t-tab-panel label="已报名" value="已报名"/>
+        <t-tab-panel label="已结束" value="已结束"/>
+    </t-tabs>
+
+    <view class="py-16rpx">
+        <t-cell-group theme="card">
+            <t-cell description="2025/11/11 11:00 - 2026/12/12 12:00" hover
+                    image="https://tdesign.gtimg.com/mobile/demos/swiper1.png">
+                <view slot="title">
+                    <view class="mr-16rpx inline">我是活动名我是活动名我是活动名我是活动名</view>
+                </view>
+                <view slot="description">
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="warning" variant="light">
+                        AAAAAAAA 0.2
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="success" variant="light">会议
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="primary" variant="light">线上
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mt-12rpx" theme="danger" variant="light">BBBBB
+                    </t-tag>
+                </view>
+            </t-cell>
+        </t-cell-group>
+    </view>
+
+    <view class="py-16rpx">
+        <t-cell-group theme="card">
+            <t-cell description="2026/11/11 11:00 - 2029/12/12 12:00" hover
+                    image="https://tdesign.gtimg.com/mobile/demos/swiper2.png">
+                <view slot="title">
+                    <view class="mr-16rpx inline">AAA XX 批发</view>
+                </view>
+                <view slot="description">
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="warning" variant="light">
+                        CCCCCCCCCC 0.3
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="success" variant="light">其他
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mr-12rpx mt-12rpx" theme="primary" variant="light">线下
+                    </t-tag>
+                    <t-tag class="inline-block vertical-bottom mt-12rpx" theme="danger" variant="light">DDDDDD</t-tag>
+                </view>
+            </t-cell>
+        </t-cell-group>
+    </view>
+</view>
+
+
+

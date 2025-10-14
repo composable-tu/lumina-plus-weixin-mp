@@ -1,0 +1,43 @@
+<!--
+Copyright (c) 2025 LuminaPJ
+SM2 Key Generator is licensed under Mulan PSL v2.
+You can use this software according to the terms and conditions of the Mulan PSL v2.
+You may obtain a copy of Mulan PSL v2 at:
+         http://license.coscl.org.cn/MulanPSL2
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v2 for more details.
+-->
+<error-popup bind:visible-change="errorVisibleChange" message="{{errorMessage}}" visible="{{errorVisible}}"/>
+
+<t-navbar t-class-content="t-navbar-content" t-class-placeholder="t-navbar-placeholder">
+    <view class="title" slot="left">操作台</view>
+</t-navbar>
+
+<view>
+    <view class="block py-16rpx">
+        <view class="custom-desc mx-48rpx mb-16rpx">活动</view>
+        <t-grid column="{{4}}" theme="card">
+            <t-grid-item icon="calendar-2" text="签到签退"/>
+            <t-grid-item icon="upload" text="文件提交"/>
+        </t-grid>
+    </view>
+
+    <view class="block py-16rpx">
+        <view class="custom-desc mx-48rpx mb-16rpx">审批</view>
+        <t-grid column="{{4}}" theme="card">
+            <t-grid-item icon="seal" text="项目申报"/>
+            <t-grid-item icon="history" text="我的审批"/>
+        </t-grid>
+    </view>
+
+    <view class="block py-16rpx">
+        <view class="custom-desc mx-48rpx mb-16rpx">组织</view>
+        <t-grid column="{{4}}" theme="card">
+            <t-grid-item icon="usergroup-add" text="加入组织"/>
+        </t-grid>
+    </view>
+</view>
+
+
