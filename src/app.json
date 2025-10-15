@@ -31,5 +31,10 @@
   },
   "componentFramework": "glass-easel",
   "lazyCodeLoading": "requiredComponents",
-  "darkmode": true
+  "darkmode": true,
+  "rendererOptions": {
+    "skyline": {
+      "defaultContentBox": true
+    }
+  }
 }

@@ -1,2 +1,52 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!--
+Copyright (c) 2025 LuminaPJ
+SM2 Key Generator is licensed under Mulan PSL v2.
+You can use this software according to the terms and conditions of the Mulan PSL v2.
+You may obtain a copy of Mulan PSL v2 at:
+         http://license.coscl.org.cn/MulanPSL2
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v2 for more details.
+-->
+<error-popup bind:visible-change="errorVisibleChange" message="{{errorMessage}}" visible="{{errorVisible}}"/>
+
+<t-navbar t-class-content="t-navbar-content" t-class-placeholder="t-navbar-placeholder">
+    <view class="title" slot="left">{{i18n.user}}</view>
+</t-navbar>
+
+<view>
+    <view class="block py-16rpx">
+        <t-cell-group theme="card">
+            <t-cell description="这是某某组织的名称" hover image="https://tdesign.gtimg.com/mobile/demos/avatar4.png">
+                <view slot="title">
+                    <view class="mr-16rpx inline">人的名字</view>
+                    <t-tag class="inline-block vertical-bottom mr-12rpx" size="small" variant="light">123456789
+                    </t-tag>
+                </view>
+            </t-cell>
+        </t-cell-group>
+    </view>
+    <view class="block py-16rpx">
+        <t-grid column="{{4}}" theme="card">
+            <t-grid-item description="123.4 分" icon="star" text="{{i18n.myScore}}"/>
+            <t-grid-item description="完成 56 个" icon="flag" text="{{i18n.myActivities}}"/>
+            <t-grid-item description="已认证" icon="verify" text="{{i18n.myInfo}}"/>
+            <t-grid-item description="信用值 100" icon="thumb-up" text="{{i18n.myCredit}}"/>
+        </t-grid>
+    </view>
+    <view class="block py-16rpx">
+        <t-cell-group theme="card">
+            <t-cell arrow bordered hover leftIcon="mail" title="{{i18n.message}}">
+                <t-badge count="99+" slot="note"/>
+            </t-cell>
+            <t-cell arrow bordered="{{false}}" hover leftIcon="user-setting" title="{{i18n.myGroup}}"/>
+        </t-cell-group>
+    </view>
+    <view class="block py-16rpx">
+        <t-cell-group theme="card">
+            <t-cell arrow bordered hover leftIcon="setting" title="{{i18n.setting}}"/>
+            <t-cell arrow bordered="{{false}}" hover leftIcon="info-circle" title="{{i18n.about}}"/>
+        </t-cell-group>
+    </view>
+</view>

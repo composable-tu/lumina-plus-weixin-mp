@@ -16,8 +16,12 @@
     "noUnusedParameters": true,
     "strict": true,
     "strictPropertyInitialization": true,
-    "lib": ["ES2024"],
-    "types": ["miniprogram-api-typings"],
+    "lib": [
+      "ES2024"
+    ],
+    "types": [
+      "miniprogram-api-typings"
+    ],
     "skipLibCheck": true
   },
   "include": [
@@ -28,5 +32,10 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "paths": {
+    "tdesign-miniprogram/*": [
+      "./src/miniprogram_npm/tdesign-miniprogram/*"
+    ]
+  }
 }

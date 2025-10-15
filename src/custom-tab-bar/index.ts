@@ -9,12 +9,13 @@
  * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
  * See the Mulan PSL v2 for more details.
  */
+import {tr} from "../i18n/main"
 
 Page({
     data: {
-        value: 'home', list: [{value: 'home', label: "首页", icon: 'home'}, {
-            value: 'application', label: '操作台', icon: 'application'
-        }, {value: 'user', label: '我', icon: 'user'}],
+        value: 'home', list: [{value: 'home', label: tr('function.home'), icon: 'home'}, {
+            value: 'application', label: tr('function.application'), icon: 'application'
+        }, {value: 'user', label: tr('function.user'), icon: 'user'}],
     }, onChange(e: any) {
         switch (e.detail.value) {
             case "home":
