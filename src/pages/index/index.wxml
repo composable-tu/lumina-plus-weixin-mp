@@ -11,6 +11,8 @@ See the Mulan PSL v2 for more details.
 -->
 <error-popup bind:visible-change="errorVisibleChange" message="{{errorMessage}}" visible="{{errorVisible}}"/>
 
+<t-action-sheet id="t-action-sheet" bind:selected="handleFilterActivityTypeSelected" />
+
 <t-navbar t-class-content="t-navbar-content" t-class-placeholder="t-navbar-placeholder">
     <view class="title" slot="left">{{i18n.home}}</view>
 </t-navbar>
@@ -19,11 +21,12 @@ See the Mulan PSL v2 for more details.
     <t-swiper autoplay="{{true}}" class="mx-32rpx py-16rpx" current="{{1}}" duration="{{500}}" height="{{150}}"
               interval="{{5000}}" list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}"/>
 
-    <t-tabs class="mx-16rpx" theme="tag" defaultValue="registering">
-        <t-tab-panel label="{{i18n.registering}}" value="registering"/>
-        <t-tab-panel label="{{i18n.registered}}" value="registered"/>
-        <t-tab-panel label="{{i18n.ended}}" value="ended"/>
-    </t-tabs>
+    <view class="py-16rpx mx-32rpx">
+        <t-tag size="large" theme="primary" variant="light-outline" bind:click="onFilterActivityTypeClick">
+            {{filterActivityType==='registering'?i18n.registering:filterActivityType==='registered'?i18n.registered:i18n.ended}}
+            <t-icon name="unfold-more" slot="closable"/>
+        </t-tag>
+    </view>
 
     <view class="py-16rpx">
         <t-cell-group theme="card">

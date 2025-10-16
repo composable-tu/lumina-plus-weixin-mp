@@ -20,7 +20,7 @@ const zh_CN = {
         binding: "绑定",
         message: "消息",
     }, home: {
-        registering: "报名中", registered: "已报名", ended: "已结束"
+        filterActivityType: "筛选活动类型", registering: "报名中", registered: "已报名", ended: "已结束"
     }, application: {
         activities: "活动",
         checkin: "签到签退",

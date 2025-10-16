@@ -4,12 +4,12 @@
   "styleIsolation": "apply-shared",
   "usingComponents": {
     "error-popup": "/components/error-popup/error-popup",
+    "t-action-sheet": "tdesign-miniprogram/action-sheet/action-sheet",
     "t-cell": "tdesign-miniprogram/cell/cell",
     "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+    "t-icon": "tdesign-miniprogram/icon/icon",
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "t-swiper": "tdesign-miniprogram/swiper/swiper",
-    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
-    "t-tabs": "tdesign-miniprogram/tabs/tabs",
     "t-tag": "tdesign-miniprogram/tag/tag"
   }
 }
