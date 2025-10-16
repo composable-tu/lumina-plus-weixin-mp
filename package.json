@@ -16,7 +16,7 @@
     "miniprogram-sm-crypto": "^0.3.13",
     "mobx-miniprogram": "^6.12.3",
     "mobx-miniprogram-bindings": "^5.1.1",
-    "semver": "^7.7.2",
+    "semver": "^7.7.3",
     "tdesign-miniprogram": "^1.11.0-beta.2"
   },
   "devDependencies": {
@@ -27,32 +27,33 @@
     "@types/semver": "^7.7.1",
     "@types/shelljs": "^0.8.17",
     "@types/uglify-js": "^3.17.5",
-    "@unocss/cli": "^66.5.2",
+    "@unocss/cli": "^66.5.4",
     "del": "^8.0.1",
     "dts-minify": "^0.3.3",
     "gulp": "^5.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^3.1.0",
     "gulp-rename": "^2.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "license-checker-rseidelsohn": "^4.4.2",
-    "marked": "^16.3.0",
+    "marked": "^16.4.0",
     "miniprogram-api-typings": "^4.1.0",
     "shelljs": "^0.10.0",
     "spdx-license-list": "^6.10.0",
     "typescript": "^5.9.3",
     "uglify-js": "^3.19.3",
-    "unocss": "^66.5.2"
+    "unocss": "^66.5.4"
   },
   "scripts": {
-    "unocss": "unocss src/components/**/*.wxml src/custom-tab-bar/**/*.wxml src/pages/**/*.wxml !miniprogram/pages/**/node_modules/** !miniprogram/pages/**/miniprogram_npm/** -c uno.config.js --watch -o src/unocss.wxss",
-    "unocss:build": "unocss src/components/**/*.wxml src/custom-tab-bar/**/*.wxml src/pages/**/*.wxml !miniprogram/pages/**/node_modules/** !miniprogram/pages/**/miniprogram_npm/** -c uno.config.js -o src/unocss.wxss",
+    "unocss": "npx unocss src/components/**/*.wxml src/custom-tab-bar/**/*.wxml src/pages/**/*.wxml !miniprogram/pages/**/node_modules/** !miniprogram/pages/**/miniprogram_npm/** -c uno.config.js --watch -o src/unocss.wxss",
+    "unocss:build": "npx unocss src/components/**/*.wxml src/custom-tab-bar/**/*.wxml src/pages/**/*.wxml !miniprogram/pages/**/node_modules/** !miniprogram/pages/**/miniprogram_npm/** -c uno.config.js -o src/unocss.wxss",
     "build-oss-licenses-dist": "node OSSLicensesBuilder.js",
     "build-agreement-docs-dist": "node AgreementDocsBuilder.js",
-    "gulp": "gulp",
-    "gulp:dev": "gulp dev",
-    "gulp:build": "gulp build"
+    "gulp": "npx gulp",
+    "gulp:dev": "npx gulp dev",
+    "gulp:build": "nox gulp build"
   }
 }
