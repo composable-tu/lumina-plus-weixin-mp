@@ -31,7 +31,6 @@ See the Mulan PSL v2 for more details.
         <t-grid column="{{4}}" theme="card">
             <t-grid-item description="123.4 分" icon="star" text="{{i18n.myScore}}"/>
             <t-grid-item description="完成 56 个" icon="flag" text="{{i18n.myActivities}}"/>
-            <t-grid-item description="已认证" icon="verify" text="{{i18n.myInfo}}"/>
             <t-grid-item description="信用值 100" icon="thumb-up" text="{{i18n.myCredit}}"/>
         </t-grid>
     </view>
@@ -40,7 +39,8 @@ See the Mulan PSL v2 for more details.
             <t-cell arrow bordered hover leftIcon="mail" title="{{i18n.message}}">
                 <t-badge count="99+" slot="note"/>
             </t-cell>
-            <t-cell arrow bordered="{{false}}" hover leftIcon="user-setting" title="{{i18n.myGroup}}"/>
+            <t-cell arrow bordered hover leftIcon="user-setting" title="{{i18n.myGroup}}"/>
+            <t-cell arrow bordered="{{false}}" hover leftIcon="verify" note="已认证" title="{{i18n.myInfo}}"/>
         </t-cell-group>
     </view>
     <view class="block py-16rpx">
