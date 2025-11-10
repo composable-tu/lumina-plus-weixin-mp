@@ -39,7 +39,7 @@
     "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "license-checker-rseidelsohn": "^4.4.2",
-    "marked": "^16.4.1",
+    "marked": "^17.0.0",
     "miniprogram-api-typings": "^4.1.0",
     "shelljs": "^0.10.0",
     "spdx-license-list": "^6.10.0",
